@@ -19,7 +19,10 @@ knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 
 ```{r xaringan-themer, include=FALSE}
 library(xaringanthemer)
-mono_dark(
+xaringanthemer::write_xaringan_theme(
+  background_color = "#272822",
+  text_color = "#fff",
+  header_color = "#fff",
   code_font_family = "Fira Code",
   code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
   text_font_size = '42px',
