@@ -1,0 +1,120 @@
+---
+title: "Data management plans"
+author: "Matthew Loop (with content from Paul Stewart, Hope Bryan, and Kant Bangdiwala"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r xaringan-themer, include=FALSE}
+library(xaringanthemer)
+mono_dark(
+  code_font_family = "Fira Code",
+  code_font_url    = "https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css",
+  text_font_size = '42px',
+  header_h1_font_size = '72px',
+  header_h2_font_size = '55px',
+  padding	= "0.5em 0.5em 0.5em 0.5em",
+  code_font_size = "0.6em",
+  text_slide_number_font_size = "0em"
+)
+```
+
+class: middle
+
+# What can go wrong with datasets?  
+
+(e.g., group labels switched)
+
+---
+class: middle
+
+# A data management plan guides decisions about management and documentation.
+
+
+---
+# I see three main benefits of a data management plan
+
+1. It makes you evaluate tradeoffs beforehand
+2. It helps prepare you for an audit
+3. It helps you make a scope of work, a budget, and allocate personnel.
+
+--
+
+A DMP is the finest resolution of detail statisticians think about.
+
+---
+
+class: middle
+
+# There are many components to a quality data management plan, some of which you may not have thought of.
+
+---
+
+* Study description and milestones (with timeline)
+* Responsibilities (names) and scope of work
+* Study configuration: sites, users, visit / form schedule
+* Computer systems to be used: hardware *and* software; includes data management system
+* Data sources, data flow diagram
+
+---
+
+* Form and data entry screen design
+* Data capture
+* External data sources: data transfer agreements, data dictionaries, frequency of transfers
+* Data validation: checks / unit tests, data discrepancy (query) tracking and flow
+
+---
+
+* Site monitoring plan
+* Other systems: randomization, drug tracking, specimen tracking, imaging, serious adverse events (SAEs)
+* Reporting
+* Extracted data files
+* Study closeout
+* Data security
+
+---
+# Data management plans have many benefits
+
+* Forces planning  
+* You can document adherence to Good Clinical Practice (GCP)  
+* Ensure usability, preservation, and access to data later on  
+* Standardization across sites
+
+---
+
+class: middle
+
+# There are resources to help you if you have to come up with a data management plan.
+
+---
+
+* [*Clinical Data Management, 2nd ed*](https://www.amazon.com/Clinical-Data-Management-Richard-Rondel/dp/0471983292)
+* [*Management of Data in Clinical Trials, 2nd ed*](https://www.amazon.com/Management-Clinical-Trials-Eleanor-McFadden/dp/0470046082/ref=pd_sbs_14_img_0/137-7320553-9274238?_encoding=UTF8&pd_rd_i=0470046082&pd_rd_r=4d167330-4e61-481d-b49b-aeaf9ca7cdd0&pd_rd_w=C8QyP&pd_rd_wg=xcoR2&pf_rd_p=5cfcfe89-300f-47d2-b1ad-a4e27203a02a&pf_rd_r=WBDADF7SN1KZFFS1D3W5&psc=1&refRID=WBDADF7SN1KZFFS1D3W5)
+* [*Practical Guide to Clinical Data Management, 3rd ed*](https://www.amazon.com/Practical-Guide-Clinical-Data-Management/dp/1439848297)
+* [*Data Management for Researchers*](https://www.amazon.com/Data-Management-Researchers-Organize-maintain-ebook/dp/B0759XVRPR/ref=sr_1_1?crid=EBGY4TMWMR47&keywords=data+management+for+researchers&qid=1581980687&s=books&sprefix=data+management+for+resear%2Cstripbooks%2C146&sr=1-1)
+* [Society for Clinical Data Management](https://scdm.org/)
+
+---
+background-image: url("https://scdm.org/wp-content/uploads/2019/09/Clininical-Data-Science-Summary.png")
+
+background-size: contain
+
+background-color: #fff
+
+
+---
+class: middle
+
+# You never want to be accused of changing data without documentation.
